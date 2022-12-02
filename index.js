@@ -58,9 +58,9 @@ class Withdrawal extends Transaction {
 
 // DRIVER CODE BELOW
 // We use the code below to "drive" the application logic above and make sure it's working as expected
-const myAccount = new Account('billybob');
+const myAccount = new Account("billybob");
 
-console.log('Starting Balance:', myAccount.balance);
+console.log("Starting Balance:", myAccount.balance);
 
 const t1 = new Deposit(120.00, myAccount);
 t1.commit();
@@ -68,4 +68,4 @@ t1.commit();
 const t2 = new Withdrawal(150.00, myAccount);
 t2.commit();
 
-console.log('Ending Balance:', myAccount.balance);
+console.log("Ending Balance:", myAccount.balance);
